@@ -11,11 +11,11 @@ package prueba;
 public class asig {
         private int[] parciales = new int[3];
 	private String nombre;
-	/*
-	public Asignatura(String nombre) {
+	
+	public asig(String nombre) {
 		this.nombre = nombre;
 	}
-*/
+
 	
 	public String getNombre() {
 		return nombre;
