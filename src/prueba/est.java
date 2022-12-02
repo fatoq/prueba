@@ -9,17 +9,18 @@ package prueba;
  * @author david
  */
 public class est {
-   private Asignatura[] asignaturas = new Asignatura[5];
+   private asig[] asignaturas = new asig[5];
 	private String nombre;
 	
+        /*
 	public Estudiante(String nombre) {
 		this.nombre = nombre;
 	}
-	
+	*/
 	public String getNombre() {
 		return nombre;
 	}
-        public void registrarAsignatura(Asignatura asign, int posicion) {
+        public void registrarAsignatura(asig asign, int posicion) {
 		asignaturas[posicion] = asign;
 	}
         public int getNotaDeAsignatura(int posicion) {
@@ -28,8 +29,10 @@ public class est {
         public int getPromedioGeneral() {
 		//Sumamos las notas definitivas de sus asignaturas
 	int sumaNotas = 0;
-	for (Asignatura asig: asignaturas)
+	for (asig asig: asignaturas)
 			sumaNotas += asig.getNotaDefinitiva();
 		//Retornamos el promedio
 		return sumaNotas / 5; 
+}
+
 }
